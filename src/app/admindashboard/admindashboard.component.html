@@ -1,0 +1,57 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" mode="side" opened>
+    <mat-toolbar>Vehicle Service Management System</mat-toolbar>
+    <mat-nav-list>
+      <mat-list-item>
+        <button mat-button [matMenuTriggerFor]="vehicleMenu">Vehicles</button>
+        <mat-menu #vehicleMenu="matMenu">
+          <button mat-menu-item [routerLink]="['/admin/vehicles']">Vehicle List</button>
+        </mat-menu>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-button [matMenuTriggerFor]="serviceRecordMenu">Service Records</button>
+        <mat-menu #serviceRecordMenu="matMenu">
+          <button mat-menu-item [routerLink]="['/admin/service-records']">Service Record List</button>
+        </mat-menu>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-button [matMenuTriggerFor]="customerMenu">Customers</button>
+        <mat-menu #customerMenu="matMenu">
+          <button mat-menu-item [routerLink]="['/admin/customers']">Customer List</button>
+        </mat-menu>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-button [matMenuTriggerFor]="serviceAdvisorMenu">Service Advisors</button>
+        <mat-menu #serviceAdvisorMenu="matMenu">
+          <button mat-menu-item [routerLink]="['/admin/service-advisors']">Service Advisor List</button>
+        </mat-menu>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-button [matMenuTriggerFor]="workItemMenu">Work Items</button>
+        <mat-menu #workItemMenu="matMenu">
+          <button mat-menu-item [routerLink]="['/admin/work-items']">Work Item List</button>
+        </mat-menu>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button mat-icon-button (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>Admin Dashboard</span>
+      <span class="spacer"></span>
+      <button mat-icon-button [matMenuTriggerFor]="userMenu">
+        <mat-icon>account_circle</mat-icon>
+      </button>
+      <mat-menu #userMenu="matMenu">
+        <button mat-menu-item>Profile</button>
+        <button mat-menu-item (click)="logout()">Logout</button>
+      </mat-menu>
+    </mat-toolbar>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
