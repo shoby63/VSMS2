@@ -28,6 +28,7 @@ import { WorkItemDetailComponent } from './work-item-detail/work-item-detail.com
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { FormsModule } from '@angular/forms';
 import { AuthGuard } from './auth.guard';
+import { MainDashboardComponentComponent } from './main-dashboard-component/main-dashboard-component.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,6 +46,7 @@ import { AuthGuard } from './auth.guard';
     ServiceAdvisorDetailComponent,
     WorkItemListComponent,
     WorkItemDetailComponent,
+    MainDashboardComponentComponent,
    
   ],
   imports: [

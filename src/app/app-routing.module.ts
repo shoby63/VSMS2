@@ -15,12 +15,14 @@ import { ServiceAdvisorDetailComponent } from './service-advisor-detail/service-
 import { WorkItemListComponent } from './work-item-list/work-item-list.component';
 import { WorkItemDetailComponent } from './work-item-detail/work-item-detail.component';
 import { AuthGuard } from './auth.guard';
+import { MainDashboardComponentComponent } from './main-dashboard-component/main-dashboard-component.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard],data: { expectedRole: 'admin' } },
-  { path: 'admin', component: AdmindashboardComponent, canActivate: [AuthGuard], data: { expectedRole: 'admin' },children: [
-      { path: 'vehicles', component: VehicleListComponent },
+  { path: 'admin', component: MainDashboardComponentComponent, canActivate: [AuthGuard], data: { expectedRole: 'admin' },children: [
+    { path: 'admin-view', component: AdmindashboardComponent },
+    { path: 'vehicles', component: VehicleListComponent },
       { path: 'vehicles/:id', component: VehicleDetailComponent },
       { path: 'service-records', component: ServiceRecordListComponent },
       { path: 'service-records/:id', component: ServiceRecordDetailComponent },
