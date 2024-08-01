@@ -21,6 +21,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard],data: { expectedRole: 'admin' } },
   { path: 'admin', component: MainDashboardComponentComponent, canActivate: [AuthGuard], data: { expectedRole: 'admin' },children: [
+    { path: '', redirectTo: 'admin-view', pathMatch: 'full' },
     { path: 'admin-view', component: AdmindashboardComponent },
     { path: 'vehicles', component: VehicleListComponent },
       { path: 'vehicles/:id', component: VehicleDetailComponent },

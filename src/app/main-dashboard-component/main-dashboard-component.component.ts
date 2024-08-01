@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './main-dashboard-component.component.css'
 })
 export class MainDashboardComponentComponent {
-
+  activeCustomers: number = 120;
+  totalVehicles: number = 80;
+  totalServiceAdvisors: number = 15;
 }

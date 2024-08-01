@@ -5,6 +5,12 @@
 .sidenav {
   width: 250px;
 }
+.header-container{
+  height:20vh;
+  max-height:100px;
+  width:80vw;
+  background:white;
+ }
 
 .content {
   padding: 16px;
@@ -18,4 +24,24 @@
 
 .dashboard-card:hover {
   transform: scale(1.05);
+}
+
+li{
+  border:2px solid black;
+  width:100%;
+
+}
+.section-container{
+  width:80vw;
+  height:80vh;
+}
+.card{
+  width:300px;
+  height:150px;
+  box-shadow:5px 5px 20px;
+}
+.customer-enquiry-container{
+  box-shadow:5px 5px 20px;
+  border:5px solid white;
+  border-radius:2%;
 }

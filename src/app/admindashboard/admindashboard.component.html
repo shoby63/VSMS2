@@ -1,57 +1,77 @@
-<mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" mode="side" opened>
-    <mat-toolbar>Vehicle Service Management System</mat-toolbar>
-    <mat-nav-list>
-      <mat-list-item>
-        <button mat-button [matMenuTriggerFor]="vehicleMenu">Vehicles</button>
-        <mat-menu #vehicleMenu="matMenu">
-          <button mat-menu-item [routerLink]="['/admin/vehicles']">Vehicle List</button>
-        </mat-menu>
-      </mat-list-item>
-      <mat-list-item>
-        <button mat-button [matMenuTriggerFor]="serviceRecordMenu">Service Records</button>
-        <mat-menu #serviceRecordMenu="matMenu">
-          <button mat-menu-item [routerLink]="['/admin/service-records']">Service Record List</button>
-        </mat-menu>
-      </mat-list-item>
-      <mat-list-item>
-        <button mat-button [matMenuTriggerFor]="customerMenu">Customers</button>
-        <mat-menu #customerMenu="matMenu">
-          <button mat-menu-item [routerLink]="['/admin/customers']">Customer List</button>
-        </mat-menu>
-      </mat-list-item>
-      <mat-list-item>
-        <button mat-button [matMenuTriggerFor]="serviceAdvisorMenu">Service Advisors</button>
-        <mat-menu #serviceAdvisorMenu="matMenu">
-          <button mat-menu-item [routerLink]="['/admin/service-advisors']">Service Advisor List</button>
-        </mat-menu>
-      </mat-list-item>
-      <mat-list-item>
-        <button mat-button [matMenuTriggerFor]="workItemMenu">Work Items</button>
-        <mat-menu #workItemMenu="matMenu">
-          <button mat-menu-item [routerLink]="['/admin/work-items']">Work Item List</button>
-        </mat-menu>
-      </mat-list-item>
-    </mat-nav-list>
-  </mat-sidenav>
-  <mat-sidenav-content>
-    <mat-toolbar color="primary">
-      <button mat-icon-button (click)="drawer.toggle()">
-        <mat-icon>menu</mat-icon>
-      </button>
-      <span>Admin Dashboard</span>
-      <span class="spacer"></span>
-      <button mat-icon-button [matMenuTriggerFor]="userMenu">
-        <mat-icon>account_circle</mat-icon>
-      </button>
-      <mat-menu #userMenu="matMenu">
-        <button mat-menu-item>Profile</button>
-        <button mat-menu-item (click)="logout()">Logout</button>
-      </mat-menu>
-    </mat-toolbar>
-    <div class="content">
-      <router-outlet></router-outlet>
+<div class="body-container d-flex">
+ 
+ <div class="section-container"> 
+     <div class="card-container d-flex justify-content-around">
+      <div class="mt-5">
+        <div class="card bg-primary">
+           <div class="card-body">
+              <h4 class="card-title " >
+                 Total service Advisors : <span>{{totalServiceAdvisors}}</span>
+              </h4>
+           </div>
+        </div>
     </div>
-  </mat-sidenav-content>
-</mat-sidenav-container>
+    <div class="mt-5">
+      <div class="card bg-warning">
+         <div class="card-body">
+            <h4 class="card-title " >
+               Active Customers <br>
+               <span>{{activeCustomers}}</span>
+            </h4>
+         </div>
+      </div>
+  </div>
+  <div class="mt-5">
+    <div class="card bg-danger">
+       <div class="card-body">
+          <h4 class="card-title " >
+             Total vehicles <Br><span>{{totalVehicles}}</span>
+          </h4>
+       </div>
+    </div>
+</div>
+     </div>
+     <div class="customer-enquiry-container m-2 mt-3">
+      <table class="table table-hover table-custom">
+        <thead>
+            <tr>
+                <th scope="col">Customer Name</th>
+                <th scope="col"> Vehicle Name</th>
+                <th scope="col">Category</th>
+                <th scope="col">Vehicle Id</th>
+                <th scope="col-lg">Problem Description                  </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Evan Ron</th>
+                <td>John Doe</td>
+                <td>john.doeexample.com</td>
+                <td>(555) 123-4567</td>
+                <td>
+                    Handle not working Properly
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Sarina Evia</th>
+                <td>Jane Smith</td>
+                <td>jane.smithexample.com</td>
+                <td>(555) 987-6543</td>
+                <td>TurboCharger damage
+                </td>
+            </tr>
+            <tr>
+              <th scope="row">John Smith</th>
+              <td>Jane Smith</td>
+              <td>jane.smithexample.com</td>
+              <td>(555) 987-6543</td>
+              <td>Engine Overheating
+              </td>
+          </tr>
+           
+        </tbody>
+    </table>
 
+     </div>
+  </div>
+</div>
