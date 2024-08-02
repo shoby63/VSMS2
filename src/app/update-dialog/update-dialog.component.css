@@ -1,0 +1,9 @@
+/* .form-group {
+    margin-bottom: 15px;
+  }
+   */
+
+:host {
+  width: max-content;
+  height: max-content;
+}

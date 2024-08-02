@@ -1,0 +1,16 @@
+<table class="table table-hover table-custom">
+  <thead>
+    <tr>
+      <th *ngFor="let header of headers" scope="col">{{ header }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of data">
+      <td *ngFor="let key of keys" scope="col">{{ row[key] }}</td>
+      <td scope="col">
+        <button (click)="editRow(row.id)">Edit</button>
+        <button (click)="deleteRow(row.id)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

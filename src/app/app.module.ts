@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatCardModule } from '@angular/material/card';
-import { MatSlideToggleModule,MatSlideToggle } from '@angular/material/slide-toggle';
+import {
+  MatSlideToggleModule,
+  MatSlideToggle,
+} from '@angular/material/slide-toggle';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
@@ -26,9 +29,11 @@ import { ServiceAdvisorDetailComponent } from './service-advisor-detail/service-
 import { WorkItemListComponent } from './work-item-list/work-item-list.component';
 import { WorkItemDetailComponent } from './work-item-detail/work-item-detail.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthGuard } from './auth.guard';
 import { MainDashboardComponentComponent } from './main-dashboard-component/main-dashboard-component.component';
+import { ListComponent } from './list/list.component';
+import { UpdateDialogComponent } from './update-dialog/update-dialog.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,7 +52,8 @@ import { MainDashboardComponentComponent } from './main-dashboard-component/main
     WorkItemListComponent,
     WorkItemDetailComponent,
     MainDashboardComponentComponent,
-   
+    ListComponent,
+    UpdateDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -61,12 +67,10 @@ import { MainDashboardComponentComponent } from './main-dashboard-component/main
     MatButtonModule,
     MatMenuModule,
     MatDialogModule,
-    MatCardModule
+    MatCardModule,
+    ReactiveFormsModule,
   ],
-  providers: [
-    AuthGuard,
-    provideAnimationsAsync()
-  ],
-  bootstrap: [AppComponent]
+  providers: [AuthGuard, provideAnimationsAsync()],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
