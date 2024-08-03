@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { UpdateDialogComponent } from '../update-dialog/update-dialog.component';
 
@@ -17,11 +17,15 @@ export class ListComponent {
   @Input()
   keys: string[] = [];
 
-  @Input()
-  editRow!: (item:number) => void;
+  // @Input()
+  // editRow!: (item:number) => void;
+  @Output()
+  editRow = new EventEmitter<number>();
 
   constructor() {}
-
+  onEditRow(itemId: number) {
+    this.editRow.emit(itemId);
+  }
   deleteRow(itemId: number) {
     this.data = this.data.filter((item) => item.id !== itemId);
   }

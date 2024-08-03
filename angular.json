@@ -20,6 +20,7 @@
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
+  
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
@@ -109,7 +110,10 @@
             ],
             "scripts": []
           }
-        }
+        },
+        "options": {
+      "proxyConfig": "proxy.conf.json"
+    }
       }
     }
   }

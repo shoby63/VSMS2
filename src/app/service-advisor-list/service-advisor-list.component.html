@@ -1,1 +1,1 @@
-<app-list [data]="serviceAdvisors" [headers]="serviceHeaders" [keys]="keys" [editRow]="openDialog"></app-list>
+<app-list [data]="serviceAdvisors" [headers]="serviceHeaders" [keys]="keys" (editRow)="openDialog($event)"></app-list>

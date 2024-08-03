@@ -8,7 +8,7 @@
     <tr *ngFor="let row of data">
       <td *ngFor="let key of keys" scope="col">{{ row[key] }}</td>
       <td scope="col">
-        <button (click)="editRow(row.id)">Edit</button>
+        <button (click)="onEditRow(row.id)">Edit</button>
         <button (click)="deleteRow(row.id)">Delete</button>
       </td>
     </tr>

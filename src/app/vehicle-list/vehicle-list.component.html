@@ -1,1 +1,8 @@
-<app-list [data]="vehicleList" [headers]="vehicleHeaders" [keys]="keys" [editRow]="openDialog"></app-list>
+<app-list
+  [data]="vehicleList"
+  [headers]="vehicleHeaders"
+  [keys]="keys"
+  (editRow)="openDialog($event)"
+></app-list>
+
+<button class="btn btn-primary" (click)="createDialog()">Create </button>

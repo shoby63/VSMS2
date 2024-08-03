@@ -30,10 +30,10 @@ export class UpdateDialogComponent {
   }
 
   onSave(): void {
-    this.dialogRef.close(this.data);
-    this.data.name = this.editVehicleForm.get('name')?.value;
-    this.data.status = this.editVehicleForm.get('status')?.value;
-    this.data.serviceAdvisor =
-      this.editVehicleForm.get('serviceAdvisor')?.value;
+    this.dialogRef.close(this.editVehicleForm.getRawValue());
+    // this.data.name = this.editVehicleForm.get('name')?.value;
+    // this.data.status = this.editVehicleForm.get('status')?.value;
+    // this.data.serviceAdvisor =
+    //   this.editVehicleForm.get('serviceAdvisor')?.value;
   }
 }

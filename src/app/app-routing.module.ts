@@ -16,39 +16,37 @@ import { WorkItemListComponent } from './work-item-list/work-item-list.component
 import { WorkItemDetailComponent } from './work-item-detail/work-item-detail.component';
 import { AuthGuard } from './auth.guard';
 import { MainDashboardComponentComponent } from './main-dashboard-component/main-dashboard-component.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 const routes: Routes = [
+  { path: '', component: LandingPageComponent }, // Root path redirects to LandingPageComponent
   { path: 'login', component: LoginComponent },
-  { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard],data: { expectedRole: 'admin' } },
-  { path: 'admin', component: MainDashboardComponentComponent, canActivate: [AuthGuard], data: { expectedRole: 'admin' },children: [
+  { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard], data: { expectedRole: 'admin' } },
+  { path: 'admin', component: MainDashboardComponentComponent, canActivate: [AuthGuard], data: { expectedRole: 'admin' }, children: [
     { path: '', redirectTo: 'admin-view', pathMatch: 'full' },
     { path: 'admin-view', component: AdmindashboardComponent },
     { path: 'vehicles', component: VehicleListComponent },
-      { path: 'vehicles/:id', component: VehicleDetailComponent },
-      { path: 'service-records', component: ServiceRecordListComponent },
-      { path: 'service-records/:id', component: ServiceRecordDetailComponent },
-      { path: 'customers', component: CustomerListComponent },
-      { path: 'customers/:id', component: CustomerDetailComponent },
-      { path: 'service-advisors', component: ServiceAdvisorListComponent },
-      { path: 'service-advisors/:id', component: ServiceAdvisorDetailComponent },
-      { path: 'work-items', component: WorkItemListComponent },
-      { path: 'work-items/:id', component: WorkItemDetailComponent }
-    ]
-  },
+    { path: 'vehicles/:id', component: VehicleDetailComponent },
+    { path: 'service-records', component: ServiceRecordListComponent },
+    { path: 'service-records/:id', component: ServiceRecordDetailComponent },
+    { path: 'customers', component: CustomerListComponent },
+    { path: 'customers/:id', component: CustomerDetailComponent },
+    { path: 'service-advisors', component: ServiceAdvisorListComponent },
+    { path: 'service-advisors/:id', component: ServiceAdvisorDetailComponent },
+    { path: 'work-items', component: WorkItemListComponent },
+    { path: 'work-items/:id', component: WorkItemDetailComponent }
+  ]},
   { path: 'service-advisor', component: ServiceAdvisorDashboardComponent, canActivate: [AuthGuard], children: [
-      { path: 'vehicles', component: VehicleListComponent },
-      { path: 'vehicles/:id', component: VehicleDetailComponent },
-      { path: 'service-records', component: ServiceRecordListComponent },
-      { path: 'service-records/:id', component: ServiceRecordDetailComponent },
-      { path: 'customers', component: CustomerListComponent },
-      { path: 'customers/:id', component: CustomerDetailComponent },
-      { path: 'work-items', component: WorkItemListComponent },
-      { path: 'work-items/:id', component: WorkItemDetailComponent }
-    ]
-  },
-  { path: '', redirectTo: '/login', pathMatch: 'full' }
+    { path: 'vehicles', component: VehicleListComponent },
+    { path: 'vehicles/:id', component: VehicleDetailComponent },
+    { path: 'service-records', component: ServiceRecordListComponent },
+    { path: 'service-records/:id', component: ServiceRecordDetailComponent },
+    { path: 'customers', component: CustomerListComponent },
+    { path: 'customers/:id', component: CustomerDetailComponent },
+    { path: 'work-items', component: WorkItemListComponent },
+    { path: 'work-items/:id', component: WorkItemDetailComponent }
+  ]}
 ];
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

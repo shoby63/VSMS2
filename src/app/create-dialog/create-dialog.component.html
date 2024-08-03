@@ -1,0 +1,30 @@
+<h1 mat-dialog-title>{{ data.formConfig.title }}</h1>
+<div mat-dialog-content>
+  <form [formGroup]="formGroup">
+    <div *ngFor="let field of data.formConfig.fields">
+      <mat-form-field appearance="fill" *ngIf="field.type === 'text'">
+        <mat-label>{{ field.label }}</mat-label>
+        <input matInput [formControlName]="field.name">
+        <mat-error *ngIf="formGroup.get(field.name)?.hasError('required')">
+          {{ field.label }} is required.
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" *ngIf="field.type === 'select'">
+        <mat-label>{{ field.label }}</mat-label>
+        <mat-select [formControlName]="field.name">
+          <mat-option *ngFor="let option of field.options" [value]="option.value">
+            {{ option.label }}
+          </mat-option>
+        </mat-select>
+        <mat-error *ngIf="formGroup.get(field.name)?.hasError('required')">
+          {{ field.label }} is required.
+        </mat-error>
+      </mat-form-field>
+    </div>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-button (click)="onSave()" [disabled]="formGroup.invalid">Save</button>
+</div>

@@ -34,6 +34,13 @@ import { AuthGuard } from './auth.guard';
 import { MainDashboardComponentComponent } from './main-dashboard-component/main-dashboard-component.component';
 import { ListComponent } from './list/list.component';
 import { UpdateDialogComponent } from './update-dialog/update-dialog.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { CreateDialogComponent } from './create-dialog/create-dialog.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,6 +61,8 @@ import { UpdateDialogComponent } from './update-dialog/update-dialog.component';
     MainDashboardComponentComponent,
     ListComponent,
     UpdateDialogComponent,
+    LandingPageComponent,
+    CreateDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -68,7 +77,12 @@ import { UpdateDialogComponent } from './update-dialog/update-dialog.component';
     MatMenuModule,
     MatDialogModule,
     MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
+    MatCardModule,
     ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [AuthGuard, provideAnimationsAsync()],
   bootstrap: [AppComponent],
