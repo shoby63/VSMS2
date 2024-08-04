@@ -1,0 +1,207 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\TECHM\\capstone project\\api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8451D336-5C03-4E93-8EA6-6383047C0373}|api.csproj|e:\\techm\\capstone project\\api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8451D336-5C03-4E93-8EA6-6383047C0373}|api.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8451D336-5C03-4E93-8EA6-6383047C0373}|api.csproj|e:\\techm\\capstone project\\api\\controllers\\servicerepresentativecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8451D336-5C03-4E93-8EA6-6383047C0373}|api.csproj|solutionrelative:controllers\\servicerepresentativecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8451D336-5C03-4E93-8EA6-6383047C0373}|api.csproj|e:\\techm\\capstone project\\api\\controllers\\workitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8451D336-5C03-4E93-8EA6-6383047C0373}|api.csproj|solutionrelative:controllers\\workitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8451D336-5C03-4E93-8EA6-6383047C0373}|api.csproj|e:\\techm\\capstone project\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8451D336-5C03-4E93-8EA6-6383047C0373}|api.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8451D336-5C03-4E93-8EA6-6383047C0373}|api.csproj|e:\\techm\\capstone project\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8451D336-5C03-4E93-8EA6-6383047C0373}|api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\TECHM\\capstone project\\api\\Migrations\\20240804060412_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240804060412_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8451D336-5C03-4E93-8EA6-6383047C0373}|api.csproj|e:\\techm\\capstone project\\api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8451D336-5C03-4E93-8EA6-6383047C0373}|api.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8451D336-5C03-4E93-8EA6-6383047C0373}|api.csproj|e:\\techm\\capstone project\\api\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8451D336-5C03-4E93-8EA6-6383047C0373}|api.csproj|solutionrelative:userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8451D336-5C03-4E93-8EA6-6383047C0373}|api.csproj|e:\\techm\\capstone project\\api\\data\\primeautombiledbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8451D336-5C03-4E93-8EA6-6383047C0373}|api.csproj|solutionrelative:data\\primeautombiledbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8451D336-5C03-4E93-8EA6-6383047C0373}|api.csproj|e:\\techm\\capstone project\\api\\randomnumbergenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8451D336-5C03-4E93-8EA6-6383047C0373}|api.csproj|solutionrelative:randomnumbergenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8451D336-5C03-4E93-8EA6-6383047C0373}|api.csproj|e:\\techm\\capstone project\\api\\dtos\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8451D336-5C03-4E93-8EA6-6383047C0373}|api.csproj|solutionrelative:dtos\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WorkItemController.cs",
+              "DocumentMoniker": "E:\\TECHM\\capstone project\\api\\Controllers\\WorkItemController.cs",
+              "RelativeDocumentMoniker": "Controllers\\WorkItemController.cs",
+              "ToolTip": "E:\\TECHM\\capstone project\\api\\Controllers\\WorkItemController.cs",
+              "RelativeToolTip": "Controllers\\WorkItemController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAACEAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T06:17:17.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "E:\\TECHM\\capstone project\\api\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "E:\\TECHM\\capstone project\\api\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAuwFcAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T19:35:51.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\TECHM\\capstone project\\api\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\TECHM\\capstone project\\api\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAAB4AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T22:50:50.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Primeautombiledbcontext.cs",
+              "DocumentMoniker": "E:\\TECHM\\capstone project\\api\\Data\\Primeautombiledbcontext.cs",
+              "RelativeDocumentMoniker": "Data\\Primeautombiledbcontext.cs",
+              "ToolTip": "E:\\TECHM\\capstone project\\api\\Data\\Primeautombiledbcontext.cs",
+              "RelativeToolTip": "Data\\Primeautombiledbcontext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T21:34:46.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Randomnumbergenerator.cs",
+              "DocumentMoniker": "E:\\TECHM\\capstone project\\api\\Randomnumbergenerator.cs",
+              "RelativeDocumentMoniker": "Randomnumbergenerator.cs",
+              "ToolTip": "E:\\TECHM\\capstone project\\api\\Randomnumbergenerator.cs",
+              "RelativeToolTip": "Randomnumbergenerator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T20:30:19.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ServicerepresentativeController.cs",
+              "DocumentMoniker": "E:\\TECHM\\capstone project\\api\\Controllers\\ServicerepresentativeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ServicerepresentativeController.cs",
+              "ToolTip": "E:\\TECHM\\capstone project\\api\\Controllers\\ServicerepresentativeController.cs",
+              "RelativeToolTip": "Controllers\\ServicerepresentativeController.cs",
+              "ViewState": "AQIAAG4AAAAAAAAAAAAAwHcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T06:02:53.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "user.cs",
+              "DocumentMoniker": "E:\\TECHM\\capstone project\\api\\models\\user.cs",
+              "RelativeDocumentMoniker": "models\\user.cs",
+              "ToolTip": "E:\\TECHM\\capstone project\\api\\models\\user.cs",
+              "RelativeToolTip": "models\\user.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAACAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T19:32:55.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "E:\\TECHM\\capstone project\\api\\UserService.cs",
+              "RelativeDocumentMoniker": "UserService.cs",
+              "ToolTip": "E:\\TECHM\\capstone project\\api\\UserService.cs",
+              "RelativeToolTip": "UserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T19:44:39.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\TECHM\\capstone project\\api\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "E:\\TECHM\\capstone project\\api\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAChAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-01T20:47:14.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20240804060412_InitialCreate.cs",
+              "DocumentMoniker": "E:\\TECHM\\capstone project\\api\\Migrations\\20240804060412_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240804060412_InitialCreate.cs",
+              "ToolTip": "E:\\TECHM\\capstone project\\api\\Migrations\\20240804060412_InitialCreate.cs",
+              "RelativeToolTip": "Migrations\\20240804060412_InitialCreate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T06:04:13.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserLoginDto.cs",
+              "DocumentMoniker": "E:\\TECHM\\capstone project\\api\\DTOS\\UserLoginDto.cs",
+              "RelativeDocumentMoniker": "DTOS\\UserLoginDto.cs",
+              "ToolTip": "E:\\TECHM\\capstone project\\api\\DTOS\\UserLoginDto.cs",
+              "RelativeToolTip": "DTOS\\UserLoginDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T19:37:53.149Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
